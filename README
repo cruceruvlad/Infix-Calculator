@@ -1,0 +1,3 @@
+Se citeste cate un caracter si se sare la diferite label-uri in functie de valoarea sa. Daca caracterul este o operatie se executa operatia respectiva si se retine rezultatul in eax. Daca caracterul este minus,
+se va varifica in acest caz daca caracterul dupa minus este o cifra pentru a sti daca minusul este de semn. Daca este de semn atunci se va seta variabila semn(un fel de flag de semn) pe 1. Daca caracterul este o cifra atunci se va adauga la numarul in curs de formare in eax(eax=eax*10+cifra).
+Daca caracterul este un spatiu atunci se va adauga registrul eax(rezultatul operatiei sau numar format) in stiva. Se va verifica daca variabila semn,este 1 si in acest caz vom inmulti eax cu -1 inainte de adaugare, iar variabila se va reseta.
